@@ -1,0 +1,257 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins como padrão */
+    font-weight: 400; /* Padrão de peso da fonte */
+}
+
+header {
+    background: linear-gradient(to right, #0a6afa, #08204a); /* Gradiente de azul para azul escuro */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f4f4f4;
+}
+
+h1, .btn.buy-tickets {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900; /* Poppins Black para títulos */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Poppins Medium para subtítulos */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* Poppins Light para texto normal */
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s ease; /* Transição suave de cor */
+}
+
+.artist-info {
+    background-color: #0a6afa; /* Cor de fundo da faixa */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.artist-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da faixa */
+    height: auto; /* Altura automática para manter a proporção */
+    display: block; /* Para centralizar a imagem horizontalmente */
+    margin: 0 auto 20px; /* Margem inferior para espaçamento */
+}
+
+.artist-description {
+    font-size: 14px; /* Tamanho da fonte da descrição */
+    margin: 0; /* Remover margem padrão */
+}
+
+
+.btn:hover {
+    background: #555;
+}
+
+.buy-tickets {
+    background: #0a6afa; /* Cor azul da aba de comprar ingressos */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tour-ad {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px; /* Largura máxima do anúncio */
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+.tour-ad-link {
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
+    text-decoration: none; /* Remover sublinhado do link */
+    border-radius: 10px; /* Adicionar borda arredondada */
+    overflow: hidden; /* Certificar-se de que a borda arredondada seja aplicada corretamente */
+    transition: transform 0.3s ease; /* Adicionar transição suave */
+}
+
+.tour-ad-link:hover {
+    transform: scale(1.05); /* Aumentar ligeiramente a escala ao passar o mouse */
+}
+
+.tour-ad-img {
+    max-width: 50%; /* Tamanho máximo da imagem */
+    height: auto;
+    display: block;
+    margin-right: 10px; /* Espaçamento entre a imagem e o título */
+    transition: transform 0.3s ease; /* Adicionar transição suave */
+}
+
+.tour-ad-img:hover {
+    transform: scale(1.05); /* Aumentar ligeiramente a escala ao passar o mouse */
+}
+
+.tour-ad-title {
+    flex-grow: 1; /* Permite que o título ocupe o espaço restante */
+    margin: 0; /* Remover margens padrão */
+}
+
+/* Adicione estilos para a página de compra */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-type {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    max-width: 200px; /* Definir uma largura máxima */
+}
+
+.ticket-type p {
+    margin-bottom: 15px;
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+}
+
+.btn {
+    background-color: #0a6afa;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #08204a;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Adicione estilos para a página de pagamento */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.payment-form {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px; /* Largura máxima do formulário */
+}
+
+.payment-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #0a6afa;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #08204a;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
